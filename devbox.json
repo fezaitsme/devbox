@@ -33,11 +33,16 @@
   ],
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
+      "edit": [
+        "hx ~/.local/share/devbox/global/default/devbox.json"
+      ],
+      "pull": [
+        "devbox global pull git@github.com:fezaitsme/devbox.git"
+      ],
+      "push": [
+        "devbox global push git@github.com:fezaitsme/devbox.git"
       ]
     }
   }
